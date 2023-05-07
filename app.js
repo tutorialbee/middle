@@ -5,7 +5,8 @@ const morgan = require('morgan');
 const app = express();
 
 // listen for requests
-app.listen(3000);
+const port = process.env.PORT || 3000;
+app.listen(port);
 
 // register view engine
 app.set('view engine', 'ejs');
